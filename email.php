@@ -6,9 +6,9 @@ Template Name: Post Contact Mail page Template
 
 <?php
 
-$title = "Inkowly";
+$title = "Avanto";
 if (isset($_GET['email'])) {
-    $toId = "vpradeep.velu@gmail.com";
+    $toId = "inkowly@gmail.com";
     $copymail = $_GET['copymail'];
     $username = $_GET['username'];
     $phone = $_GET['phone'];
@@ -17,15 +17,15 @@ if (isset($_GET['email'])) {
     if ($copymail == 'copyemail') {$to = $toId . ',' . $email;} else { $to = $toId;}
 
     // subject
-    $subject = 'Inkowly';
+    $subject = 'Avanto';
 
     // message
     $message = '
     <html>
-    <head><title>Inkowly</title></head>
+    <head><title>Avanto</title></head>
     <body>
     <table style="width:500px;border:1px solid #ccc;" cellpadding="5">
-      <tr><th bgcolor="#cccccc" colspan="2"><p style="font-size:15px;color:#333;">Inkowly</p></th></tr>
+      <tr><th bgcolor="#cccccc" colspan="2"><p style="font-size:15px;color:#333;">Avanto</p></th></tr>
       <tr><td style="width:50px;border-bottom:1px solid #ccc;">Name</td><td style="border-bottom:1px solid #ccc;">: ' . $username . '</td></tr>
       <tr><td style="width:50px;border-bottom:1px solid #ccc;">E-mail</td><td style="border-bottom:1px solid #ccc;">: ' . $email . '</td></tr>
       <tr><td style="width:50px;border-bottom:1px solid #ccc;">Phone</td><td style="border-bottom:1px solid #ccc;">: ' . $phone . '</td></tr>
@@ -41,9 +41,8 @@ if (isset($_GET['email'])) {
     $toId = $to;
     // Additional headers
     $headers .= 'To: <' . $toId . '>' . "\r\n";
-    $headers .= 'From:Inkowly <' . $toId . '>' . "\r\n";
+    $headers .= 'From:Avanto <' . $toId . '>' . "\r\n";
     //$headers .= 'Cc: '.$toId.'' . "\r\n";
-    //$headers .= 'Cc: info@annuaireus.com' . "\r\n";
     $headers .= 'Bcc: ' . $toId . '' . "\r\n";
 
     // Mail it

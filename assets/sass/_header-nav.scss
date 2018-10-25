@@ -3,7 +3,8 @@
 		z-index: 99;
 		color: $brandNameColor;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $brandHoverColor !important;
 		}
 	}

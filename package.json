@@ -1,13 +1,16 @@
 {
-  "name": "inkowly-onepage",
+  "name": "Avanto-onepage",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-wait": "0.0.2"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-changed": "^3.2.0",
     "gulp-clean-css": "^3.9.4",
+    "gulp-cssbeautify": "^1.0.0",
     "gulp-jshint": "^2.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",

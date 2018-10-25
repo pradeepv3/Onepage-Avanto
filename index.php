@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-	<title>InkOwly</title>
+	<title>Avanto</title>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Josefin+Sans" rel="stylesheet" type="text/css" />
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/bootstrap-4.1.3.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/home.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/home.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 		<header>
 			<div class="container">
 			<nav class="navbar navbar-light">
-				<a href="#" class="navbar-brand">InkOwly</a>
+				<a href="#" class="navbar-brand">Avanto</a>
 			</nav>
 			</div>
 		</header>
@@ -26,7 +26,7 @@
 				<div class="container">
 					<div class="text-center">
 					<h1>
-						InkOwly Onepage
+					Avanto Onepage
 					</h1>
 					<h3>Clean and Mordern 6 Porfolio pages.</h3>
 					<a href="#" class="btn btn-transparent">Buy Now</a>
@@ -47,7 +47,7 @@
 						<div class="col-6 home-page-display">
 							<a href="home-2.php">
 							<h2>Text Rotate</h2>
-								<img src="images/home-page-2.jpg" alt="Text Rotate" />
+								<img src="images/home-page-1.jpg" alt="Text Rotate" />
 							</a>
 						</div>
 						<div class="col-6 home-page-display">
@@ -59,7 +59,7 @@
 						<div class="col-6 home-page-display">
 							<a href="home-4.php">
 							<h2>Parallex Effect</h2>
-								<img src="images/home-page-2.jpg" alt="Parallex Effect" />
+								<img src="images/home-page-1.jpg" alt="Parallex Effect" />
 							</a>
 						</div>
 						<div class="col-6 home-page-display">

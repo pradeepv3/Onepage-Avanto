@@ -5,10 +5,10 @@ $headingFont: 'Josefin Sans',
 Open Sans,
 sans-serif;
 
-/* FONT COLORS*/
+// FONT COLORS
 $bodyFontColor: #333;
 
-/*Header Menu*/
+//Header Menu
 $brandNameColor: #FFF;
 $brandNameFixedHeaderColor: #000;
 $brandHoverColor: #f58e86;
@@ -34,7 +34,7 @@ $navMobileBorderColor: #e5e5e5;
 $navCloseBttonColor: #CCC;
 
 
-/* ANCHOR COLORS */
+// ANCHOR COLORS 
 $anchorColor:#d57e77;
 $anchorColorHover:#f58e86;
 
@@ -42,7 +42,7 @@ $faColor:#FFF;
 $faBorderColor: #333;
 $faBackgroundrColor: #d57e77;
 
-/* BUTTON COLORS */
+// BUTTON COLORS 
 $buttonLightColor: #FFF;
 $buttonLightBgColor: #f58e86;
 $buttonLightHoverColor: #FFF;
@@ -58,13 +58,13 @@ $buttonTransparentBgColor: transparent;
 $buttonTransparentBdrColor:#d57e77;
 $buttonTransparentHoverBgColor: #f58e86;
 
-/* FOOTER COLORS */
+// FOOTER COLORS 
 $footerBgColor: #f1f2f3;
 $footerBdrColor: #ccc;
 $copyRightBgColor: #434241;
 $copyRightColor: #f1f2f3;
 
-/*Brand Colors*/
+//Brand Colors
 $nodejs: #3C873A;
 $angular: #b52e31;
 $js: #f0db4f;

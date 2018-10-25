@@ -1,20 +1,27 @@
-<div class="container sec-about">
+<div class="container">
 	<div class="row">
+
 		<div class="col-12 col-lg-8 offset-lg-2  wow zoomIn">
 			<h2 class="section-title  br-line">
 				About Me
 			</h2>
 			<p class="text-center">The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. </p>
 		</div>
-		<div class="col-12 col-md-6 sec-about__pic text-center  wow fadeInLeft">
-		<img alt="InkOwly" title="InkOwly" src="images/profile-pic.png" />
+
+		<!-- About US Profile picture -->
+		<div class="col-12 col-md-5 mt-5 sec-about__pic text-center  wow fadeInLeft">
+			
 		</div>
-		<div class="col-12 col-md-6 mt-5 sec-about__txt wow fadeInRight">
+
+		<!-- About US Profile DEscription -->
+		<div class="col-12 col-md-7 mt-5 sec-about__txt wow fadeInRight">
 			<h2>Rock Start Perter</h2>
 			<h4 class="font-normal">UI/UX Designer</h4>
 			<p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To</p>
 			<p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. </p>
 			<p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To</p>
+
+			<!-- Social Icons -->
 			<div class="mt-5 mb-5">
 				<ul class="list-inline social">
 					<li class="list-inline-item text-center">

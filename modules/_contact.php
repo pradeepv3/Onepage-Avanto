@@ -1,14 +1,36 @@
-<div class="container sec-contact wow flipInX ">
+<div class="container sec-contact wow zoomIn ">
 	<div class="row">
+
 		<div class="col-12 col-lg-8 offset-lg-2">
 			<h2 class="section-title  br-line">
 				Contact
 			</h2>
 			<p class="text-center">English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family.</p>
 		</div>
-		<div class="col-12 mt-5 text-center">
-			<p class="phone-number font-weight-bold ">+91 (123) 4567890</p>
-			<ul class="list-inline social mt-4 mb-4">
+	</div>
+	<div class="row mt-5 sec-contact__info text-center mb-5">
+		<div class="col-12 col-md-4 mb-4">
+			<span class="fa fa-phone"></span>
+			<span class="d-block">
+				+91 (123) 4567890
+			</span>
+		</div>
+		<div class="col-12 col-md-4 mb-4">
+			<span class="fa fa-envelope"></span>
+			<span class="d-block">
+				<a href="mailto:inkowly@gmail.com">inkowly(@)gmail.com</a>
+			</span>
+		</div>
+		<div class="col-12 col-md-4 mb-4">
+			<span class="fa fa-map-marker"></span>
+			<span class="d-block">
+				Bangalore, Karnataka
+			</span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12  text-center">
+			<ul class="list-inline social mb-5">
 				<li class="list-inline-item text-center">
 					<a href="#">
 						<span class="fa fa-facebook facebook"></span>
@@ -35,13 +57,14 @@
 					</a>
 				</li>
 			</ul>
+			<!-- Contact form Response Container-->
 			<div id="error-msg"></div>
 			<button data-toggle="modal" data-target="#contactForm" class="btn btn-custom">Get In Touch</button>
 		</div>
 	</div>
 </div>
 
-<!-- Modal -->
+<!-- Bootstrap Modal Contact form-->
 <div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content">

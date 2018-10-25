@@ -1,13 +1,12 @@
 .section {
     margin: 0;
-    padding: 70px 0 0 0;
+    padding: 50px 0;
 
     &:first-child {
         padding-top: 0;
     }
 
     & .section-content {
-        padding: 0 0 20px;
 
         & .section-title {
             display: block;
@@ -23,51 +22,7 @@
         }
     }
 
-    .sec-about {
-        & h2 {
-            margin: 0;
-            padding: 0 0 10px;
-        }
-
-        & h4 {
-            font-weight: normal;
-            font-size: 20px;
-        }
-
-        & .sec-about__pic {
-
-            & img {
-                margin-top: 30px;
-                max-width: 100%;
-            }
-        }
-    }
-
-    & .sec-contact {
-        margin-bottom: 70px;
-
-        & .phone-number {
-            font-weight: bold;
-            font-size: 16px;
-        }
-    }
-}
 
 
-@media only screen and (max-width: 420px) {
-    .section {
-        .sec-about {
-            & .sec-about__txt {
-                text-align: center;
-            }
-
-            & .sec-about__pic {
-
-                & img {
-                    margin-top: 0;
-                }
-            }
-        }
-    }
 
 }
