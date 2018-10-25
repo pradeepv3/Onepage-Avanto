@@ -1,0 +1,77 @@
+$progress-bar-stroke-width: 3;
+$progress-bar-size: 150px;
+
+svg.circle-progress {
+    height: $progress-bar-size;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+.progress-bar__background {
+    fill: none;
+    stroke: #e2eff0;
+    stroke-width: $progress-bar-stroke-width;
+    @include Opacity(.2);
+}
+
+.progress-bar__progress {
+    fill: none;
+    stroke: #e2eff0;
+    stroke: #78bec7;
+    stroke-dasharray: 88 88;
+    stroke-dashoffset: 88;
+    stroke-linecap: round;
+    stroke-width: $progress-bar-stroke-width;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.skils {
+    position: relative;
+
+    &.html circle {
+        stroke: $html;
+    }
+
+    &.nodejs circle {
+        stroke: $nodejs;
+    }
+
+    &.angular circle {
+        stroke: $angular;
+    }
+
+    &.js circle {
+        stroke: $js;
+    }
+
+    &.illustrator circle {
+        stroke: $illustrator
+    }
+
+    &.photoshop circle {
+        stroke: $photoshop
+    }
+
+    &.php circle {
+        stroke: $php;
+    }
+
+    &.html circle {
+        stroke: $html;
+    }
+
+    &.css circle {
+        stroke: $css;
+    }
+
+    & .skil-name {
+        position: absolute;
+        width: 100%;
+        top: 55px;
+        font-weight: 600;
+
+        & .skil-percentage {
+            display: block;
+        }
+    }
+}

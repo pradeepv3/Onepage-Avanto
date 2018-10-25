@@ -1,0 +1,59 @@
+.sec-countdown {
+	background: url(../images/work-completed-bg.jpg) #f2f3f4;
+	padding: 70px 0 40px 0;
+	font-family: Josefin Sans;
+	position: relative;
+	background-size: 100%;
+	color: #FFF;
+
+	& .content-overlay {
+		@include Opacity(.9)
+	}
+
+	& h2 {
+		position: relative;
+	}
+
+
+	& h3 {
+		font-size: 20px;
+		margin: 0px;
+		padding: 0px;
+		position: relative;
+	}
+
+	& .sec-countdown__item {
+		margin: 0 0 30px;
+	}
+
+	& .sec-countdown__icon {
+		background: transparent;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+
+	& .sec-countdown_count {
+		font-size: 20px;
+		line-height: 25px;
+		margin: 0 0 7px;
+	}
+
+	@media only screen and (max-width:450px) {
+		& .sec-countdown__item {
+			margin: 0 0 20px;
+		}
+
+		& .sec-countdown__icon {
+			margin-bottom: 15px;
+		}
+
+		& .sec-countdown_count {
+			font-size: 15px;
+			margin: 0 0 0px;
+		}
+
+		& h3 {
+			font-size: 15px;
+		}
+	}
+}

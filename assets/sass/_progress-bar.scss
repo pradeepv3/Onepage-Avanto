@@ -1,0 +1,77 @@
+.sec-progressbar {
+
+	& .progress-bars {
+		& .bg-nodejs {
+			background-color: $nodejs;
+		}
+
+		& .bg-angular {
+			background-color: $angular;
+		}
+
+		& .bg-js {
+			background-color: $js;
+		}
+
+		& .bg-adobeillus {
+			background-color: $illustrator
+		}
+
+		& .bg-photoshop {
+			background-color: $photoshop
+		}
+
+		& .bg-php {
+			background-color: $php;
+		}
+
+		& .bg-html {
+			background-color: $html;
+		}
+
+		& .bg-css {
+			background-color: $css;
+		}
+
+		& .progress {
+			margin-bottom: 2.3rem;
+			overflow: visible;
+
+			& .progress-bar {
+				flex-direction: row;
+				position: relative;
+				transition: width 2s ease;
+				width: 0%;
+				@include border-radius(3px);
+
+				& span {
+					padding: 0 7px;
+					flex-basis: 100%;
+					font-size: 11px;
+					line-height: 17px;
+					text-transform: uppercase;
+					font-weight: 600;
+					position: absolute;
+					left: 0;
+					color: #333;
+					top: -20px;
+				}
+
+				& span.percentage {
+					right: 0;
+					padding-right: 0;
+
+					&:after {
+						content: "";
+						border-top: 7px solid #858585;
+						border-left: 5px solid transparent;
+						border-right: 5px solid transparent;
+						position: relative;
+						top: 20px;
+						right: -3px;
+					}
+				}
+			}
+		}
+	}
+}

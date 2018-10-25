@@ -1,0 +1,173 @@
+.sec-timeline {
+    &.circle-vertical {
+        margin: 45px 0 0 0;
+
+        .timeline {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                width: 2px;
+                top: -10px;
+                bottom: 100px;
+                background: #CCC;
+            }
+
+            li {
+                width: 50%;
+                float: left;
+                clear: left;
+                text-align: left;
+                position: relative;
+                margin: 0 0 30px;
+
+                & .timeline-badge {
+                    position: absolute;
+                    border: 1px solid #d57e77;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    line-height: 40px;
+                    text-align: center;
+                    right: -20px;
+                    background: #f58e86;
+                    font-size: 20px;
+                    color: #FFF;
+                }
+
+                & .timeline-panel {
+                    width: calc(100% - 50px);
+                    border: 1px solid #CCC;
+                    padding: 15px;
+                    position: relative;
+                    float: left;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 7px;
+                        border-left: 15px solid #ccc;
+                        border-top: 15px solid transparent;
+                        border-bottom: 15px solid transparent;
+                        right: -15px;
+                    }
+
+                    h2 {
+                        font-size: 20px;
+                        margin: 0;
+                        padding: 0;
+                        line-height: 25px;
+                    }
+
+                    h6 {
+                        padding: 5px 0;
+                        margin: 0;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #777;
+                    }
+                }
+
+                &.timeline-invert {
+                    float: right;
+                    clear: right;
+                    margin-top: 60px;
+
+                    & .timeline-badge {
+                        left: -20px;
+                    }
+
+                    & .timeline-panel {
+                        float: right;
+
+                        &:before {
+                            border-right: 15px solid #ccc;
+                            border-top: 15px solid transparent;
+                            border-bottom: 15px solid transparent;
+                            left: -15px;
+                            border-left: 0;
+                            right: auto;
+                        }
+
+                    }
+                }
+
+            }
+
+            @media only screen and (max-width: 767px) {
+                background: #555;
+
+                &:before {
+                    left: 20px;
+                }
+
+                & li {
+                    width: 100%;
+
+                    &.timeline-invert {
+                        margin-top: 0;
+                    }
+
+                    & .timeline-badge {
+                        left: -15px !important;
+                    }
+
+                    & .timeline-panel {
+                        float: right;
+
+                        &:before {
+                            border-right: 15px solid #ccc;
+                            border-top: 15px solid transparent;
+                            border-bottom: 15px solid transparent;
+                            left: -15px;
+                            border-left: 0;
+                            right: auto;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 569px) {
+                background: #555;
+
+                &:before {
+                    left: 30px;
+                }
+
+                & li {
+                    width: 100%;
+
+                    &.timeline-invert {
+                        margin-top: 0;
+                    }
+
+                    & .timeline-badge {
+                        left: -4px !important;
+                    }
+
+                    & .timeline-panel {
+                        float: right;
+                        width: calc(100% - 50px);
+
+                        &:before {
+                            border-right: 10px solid #ccc !important;
+                            border-top: 10px solid transparent !important;
+                            border-bottom: 10px solid transparent !important;
+                            left: -10px !important;
+                            border-left: 0;
+                            right: auto;
+                        }
+
+                        h2 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
