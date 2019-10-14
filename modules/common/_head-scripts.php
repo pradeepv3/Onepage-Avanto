@@ -5,7 +5,8 @@
 <meta name="author" content="Avanto" />
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans%7cJosefin+Sans" rel="stylesheet" type="text/css" />
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans%7cJosefin+Sans" rel="stylesheet" type="text/css" /> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Merienda" rel="stylesheet">
 
 <!-- Fontawsome Icon-->
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />

@@ -29,7 +29,7 @@
 					Avanto Onepage
 					</h1>
 					<h3>Clean and Mordern 6 Porfolio pages.</h3>
-					<a href="#" class="btn btn-transparent">Buy Now</a>
+					<a href="#" class="btn btn-transparent">Download Now</a>
 					</div>
 				</div>
 			</section>
@@ -77,12 +77,32 @@
 					</div>
 				</div>
 			</section>
+			<section class="feature">
+			<div class="container">
+			<p>Avanto is a one-page responsive portfolio layout which can be utilized to demonstrate your works. I have developed this page using PHP, HTML5 and  SASS. This flexible template uses fresh and clean design.</p>
+			<h2>What you get?</h2>
+				<ul>
+					<li>Bootstrap 4.3.1</li>
+					<li>7 Different Home Pages</li>
+					<li>Sass Files</li>
+					<li>Built with HTML5 &amp; CSS3</li>
+					<li>Font Awesome Icons</li>
+					<li>Google Fonts</li>
+					<li>Easy to Customize</li>
+					<li>Clean code</li>
+					<li>W3 Valid 100%</li>
+					<li>Browser Compatibility</li>
+					<li>Modern Design</li>
+			</ul>
+			</div>
+				
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="container">
 				<div class="">
 					<div class="text-center">
-						&copy; 2018 Copyright.
+						&copy; <?php echo date('Y') ?>	Copyright.
 					</div>
 				</div>
 			</div>

@@ -54,14 +54,7 @@
 
 @media screen and (min-width: 768px) {
 	.navbar {
-		& .navbar-collapse {
-			display: block;
-			flex-basis: 10%;
-		}
 
-		& .navbar-toggler {
-			display: none;
-		}
 
 		&.navbar-light {
 			& .navbar-nav {
@@ -100,7 +93,7 @@
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
 	.navbar {
 		.navbar-toggler-close {
 			display: none;

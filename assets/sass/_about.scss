@@ -1,19 +1,19 @@
 .sec-about {
-    & h2 {
+    & .sec-about__txt--name {
         margin: 0;
         padding: 0 0 10px;
     }
 
-    & h4 {
-        font-weight: normal;
+    & .sec-about__txt--designation {
         font-size: 20px;
     }
 
     & .sec-about__pic {
-        background-image: url(../images/profile-pic.png);
+        background-image: url(../images/profile-pic.jpg);
         background-size: cover;
         background-position: top center;
-        min-height: 300px;
+        min-height: 450px;
+        height: 100%;
     }
 }
 

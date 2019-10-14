@@ -17,10 +17,10 @@
     &.banner-single,
     &.banner-particles,
     &.banner-video {
-        background: url(../images/banner.jpg) no-repeat #8B8B8B;
+        background: url(../images/banner2.jpg) no-repeat #8B8B8B;
         background-size: cover;
         min-height: 100vh;
-        background-position: right;
+        background-position: 70%;
 
         &.polygon-clip {
             clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%, 0 100%);
@@ -45,14 +45,16 @@
         color: #FFF;
         @include translate(-50%, -50%);
 
-        & h2 {
-            font-size: 35px;
+
+        & h3 {
+            font-weight: 400;
         }
 
         & p {
             width: 80%;
             margin: 0px auto 35px;
             font-size: 17px;
+            display: none;
         }
     }
 }
@@ -63,32 +65,6 @@
         & .banner-content {
             & p {
                 width: 90%;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 813px) and (orientation:landscape) {
-    .banner {
-        height: 500px !important;
-
-        & h3 {
-            font-size: 26px !important;
-        }
-
-        & h2 {
-            font-size: 22px !important;
-        }
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    .banner {
-        & .banner-content {
-
-
-            & h2 {
-                font-size: 23px;
             }
         }
     }

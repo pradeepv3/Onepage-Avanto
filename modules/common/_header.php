@@ -1,6 +1,6 @@
 <header class="m-header-wrapper fixed-top">
 	<div class="container">
-		<div class="navbar navbar-light">
+		<div class="navbar navbar-light navbar-expand-lg">
 			<a href="index.php" class="navbar-brand">Avanto</a>
 
 			<!-- hamburger menu bar vissible for mobile device -->

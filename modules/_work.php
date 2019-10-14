@@ -1,7 +1,7 @@
 <div class="section sec-ourwork clearfix">
 	<div class="container controls">
-		<h2 class="section-title br-line text-center">Works</h2>
-		<div class="sec-ourwork-controls text-center wow fadeInUp">
+		<h2 class="sec-title br-line text-center">Works</h2>
+		<div class="sec-ourwork-controls text-center">
 
 			<ul class="list-unstyled list-inline mb-3 text-uppercase work-filter" id="menu-filter">
 				<li class="list-inline-item"><a class="filter active" data-filter="all">All</a></li>

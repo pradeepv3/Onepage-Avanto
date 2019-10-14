@@ -25,10 +25,6 @@ File Description: Main css file
 1. Common
 *******************/
 body {
-  font-family: Open Sans, sans-serif;
-  font-size: 14px;
-  line-height: 1.7;
-  font-weight: 400;
   color: #333; }
 
 * {
@@ -37,16 +33,7 @@ body {
 a,
 .btn,
 button,
-input[type="submit"] {
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
-
-.fa {
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
+input[type="submit"], .fa {
   transition: all 0.2s linear; }
 
 a {
@@ -54,25 +41,8 @@ a {
   a:hover, a:focus {
     color: #f58e86; }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: 0;
-  padding: 0 0 15px;
-  font-weight: 600;
-  font-family: "Josefin Sans", Open Sans, sans-serif; }
-
 .navbar-brand {
-  font-family: "Josefin Sans", Open Sans, sans-serif;
+  font-family: Open Sans, sans-serif;
   font-size: 25px; }
 
 video {
@@ -80,88 +50,7 @@ video {
 
 .fixed-nav-bg {
   background: #FFF;
-  -webkit-box-shadow: 1px 3px 10px #B7B7B7;
-  -moz-box-shadow: 1px 3px 10px #B7B7B7;
-  box-shadow: 1px 3px 10px #B7B7B7; }
-
-.btn,
-button {
-  padding: 10px 20px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border: 0;
-  font-size: 14px;
-  color: #FFF;
-  background: #f58e86; }
-  .btn:hover, .btn:focus, .btn:active,
-  button:hover,
-  button:focus,
-  button:active {
-    color: #FFF;
-    background: #d57e77;
-    -webkit-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
-  .btn.dark,
-  button.dark {
-    color: #FFF;
-    background: #d57e77; }
-    .btn.dark:hover, .btn.dark:focus, .btn.dark:active,
-    button.dark:hover,
-    button.dark:focus,
-    button.dark:active {
-      color: #FFF;
-      background: #f58e86; }
-  .btn.btn-submit .fa,
-  button.btn-submit .fa {
-    margin: 0 10px 0 0; }
-  .btn.btn-transparent,
-  button.btn-transparent {
-    background: transparent;
-    border: 2px solid #d57e77;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px; }
-    .btn.btn-transparent:hover,
-    button.btn-transparent:hover {
-      background: #f58e86; }
-  .btn.btn-transparent-banner,
-  button.btn-transparent-banner {
-    background: transparent;
-    border: 1px solid #FFF;
-    padding: 12px 35px;
-    font-size: 16px;
-    position: relative; }
-    .btn.btn-transparent-banner:after, .btn.btn-transparent-banner:before,
-    button.btn-transparent-banner:after,
-    button.btn-transparent-banner:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      left: 0; }
-    .btn.btn-transparent-banner:before,
-    button.btn-transparent-banner:before {
-      right: 0; }
-    .btn.btn-transparent-banner:hover,
-    button.btn-transparent-banner:hover {
-      color: #FFF;
-      -webkit-box-shadow: inset 0px 2px 23px #FFF;
-      -moz-box-shadow: inset 0px 2px 23px #FFF;
-      box-shadow: inset 0px 2px 23px #FFF; }
-  .btn.btn-white,
-  button.btn-white {
-    background-color: #FFF;
-    border: 2px solid #448aff;
-    color: #448aff !important; }
-    .btn.btn-white:hover,
-    button.btn-white:hover {
-      background: #448aff;
-      color: #FFF !important; }
-  .btn.btn-custom,
-  button.btn-custom {
-    font-size: 17px;
-    padding: 15px 35px; }
+  border-bottom: 1px solid #DADADA; }
 
 label {
   font-weight: 500; }
@@ -243,8 +132,6 @@ p.txt-lg {
   color: #FFF;
   background: #d57e77;
   border-color: transparent;
-  -webkit-box-shadow: 1px 4px 7px #868686;
-  -moz-box-shadow: 1px 4px 7px #868686;
   box-shadow: 1px 4px 7px #868686; }
 
 .br-line:after,
@@ -329,6 +216,113 @@ img.full-size {
   video {
     display: none; } }
 
+.btn,
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 0;
+  color: #FFF;
+  background: #f58e86; }
+  .btn:hover, .btn:focus, .btn:active,
+  button:hover,
+  button:focus,
+  button:active {
+    color: #FFF;
+    background: #d57e77;
+    box-shadow: 0 0 0 transparent; }
+  .btn.dark,
+  button.dark {
+    color: #FFF;
+    background: #d57e77; }
+    .btn.dark:hover, .btn.dark:focus, .btn.dark:active,
+    button.dark:hover,
+    button.dark:focus,
+    button.dark:active {
+      color: #FFF;
+      background: #f58e86; }
+  .btn.btn-submit .fa,
+  button.btn-submit .fa {
+    margin: 0 10px 0 0; }
+  .btn.btn-transparent,
+  button.btn-transparent {
+    background: transparent;
+    border: 2px solid #d57e77;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px; }
+    .btn.btn-transparent:hover,
+    button.btn-transparent:hover {
+      background: #f58e86; }
+  .btn.btn-transparent-banner,
+  button.btn-transparent-banner {
+    background: transparent;
+    border: 1px solid #FFF;
+    padding: 12px 35px;
+    font-size: 16px;
+    position: relative; }
+    .btn.btn-transparent-banner:after, .btn.btn-transparent-banner:before,
+    button.btn-transparent-banner:after,
+    button.btn-transparent-banner:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      left: 0; }
+    .btn.btn-transparent-banner:before,
+    button.btn-transparent-banner:before {
+      right: 0; }
+    .btn.btn-transparent-banner:hover,
+    button.btn-transparent-banner:hover {
+      color: #FFF;
+      box-shadow: inset 0px 2px 23px #FFF; }
+  .btn.btn-white,
+  button.btn-white {
+    background-color: #FFF;
+    border: 2px solid #448aff;
+    color: #448aff !important; }
+    .btn.btn-white:hover,
+    button.btn-white:hover {
+      background: #448aff;
+      color: #FFF !important; }
+  .btn.btn-custom,
+  button.btn-custom {
+    font-size: 17px;
+    padding: 15px 35px; }
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0 0 15px;
+  font-weight: 600;
+  font-family: Open Sans, sans-serif; }
+
+h2 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 350px) / (1600 - 350))); }
+
+.banner .banner-content h2,
+.banner .banner-content h3 {
+  font-family: Merienda, Open Sans, sans-serif;
+  font-size: calc(35px + (45 - 35) * ((100vw - 350px) / (1600 - 350)));
+  padding: 0 0 35px; }
+
+.banner .banner-content h3 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 350px) / (1600 - 350))); }
+
+p {
+  line-height: 30px;
+  font-size: 16px; }
+
+.sec-title {
+  font-family: Merienda, Source Sans Pro, sans-serif;
+  text-align: center;
+  font-weight: 400; }
+
 /*************
 2. Parallax effect 
 *******************/
@@ -374,11 +368,6 @@ img.full-size {
   color: #000; }
 
 @media screen and (min-width: 768px) {
-  .navbar .navbar-collapse {
-    display: block;
-    flex-basis: 10%; }
-  .navbar .navbar-toggler {
-    display: none; }
   .navbar.navbar-light .navbar-nav .nav-item .nav-link {
     font-weight: 400; }
   .navbar.navbar-light .navbar-nav .nav-item:hover .nav-link {
@@ -388,7 +377,7 @@ img.full-size {
   .fixed-nav-bg .navbar .navbar-nav .nav-item:hover .nav-link {
     color: #f58e86; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 992px) {
   .navbar .navbar-toggler-close {
     display: none;
     font-size: 2rem; }
@@ -420,9 +409,6 @@ img.full-size {
     height: 100%;
     width: 200px;
     z-index: 9999;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
     transition: all 0.2s linear; }
     .navbar .navbar-collapse .navbar-nav {
       flex-direction: column; }
@@ -462,12 +448,13 @@ img.full-size {
     filter: alpha(opacity=70);
     background: #333; }
   .banner.banner-single, .banner.banner-particles, .banner.banner-video {
-    background: url(../images/banner.jpg) no-repeat #8B8B8B;
+    background: url(../images/banner2.jpg) no-repeat #8B8B8B;
     background-size: cover;
     min-height: 100vh;
-    background-position: right; }
+    background-position: 70%; }
     .banner.banner-single.polygon-clip, .banner.banner-particles.polygon-clip, .banner.banner-video.polygon-clip {
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%, 0 100%); }
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%, 0 100%); }
   .banner.banner-video {
     background-image: url(../videos/Traffic_disco.jpg); }
   .banner.banner-particles {
@@ -480,68 +467,57 @@ img.full-size {
     text-align: center;
     position: absolute;
     color: #FFF;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    .banner .banner-content h2 {
-      font-size: 35px; }
+    .banner .banner-content h3 {
+      font-weight: 400; }
     .banner .banner-content p {
       width: 80%;
       margin: 0px auto 35px;
-      font-size: 17px; }
+      font-size: 17px;
+      display: none; }
 
 @media only screen and (max-width: 767px) {
   .banner .banner-content p {
     width: 90%; } }
 
-@media only screen and (max-width: 813px) and (orientation: landscape) {
-  .banner {
-    height: 500px !important; }
-    .banner h3 {
-      font-size: 26px !important; }
-    .banner h2 {
-      font-size: 22px !important; } }
-
-@media only screen and (max-width: 420px) {
-  .banner .banner-content h2 {
-    font-size: 23px; } }
-
 /*************
 5. Section Common
 *******************/
 .section {
-  margin: 0;
-  padding: 50px 0; }
+  margin: 0; }
   .section:first-child {
     padding-top: 0; }
-  .section .section-content .section-title {
-    display: block;
-    flex-basis: 100%;
-    padding: 0 0 3px;
-    margin-bottom: 20px;
-    font-size: 35px;
-    text-align: center; }
-    @media only screen and (max-width: 420px) {
-      .section .section-content .section-title {
-        font-size: 25px; } }
+  .section .section-content {
+    padding: 50px 0; }
+    .section .section-content .sec-title {
+      display: block;
+      flex-basis: 100%;
+      padding: 0 0 3px;
+      margin-bottom: 20px;
+      font-size: 35px;
+      text-align: center; }
+      @media only screen and (max-width: 420px) {
+        .section .section-content .sec-title {
+          font-size: 25px; } }
+  .section.sec-banner .section-content {
+    padding: 0; }
 
 /*************
 6. About Common
 *******************/
-.sec-about h2 {
+.sec-about .sec-about__txt--name {
   margin: 0;
   padding: 0 0 10px; }
 
-.sec-about h4 {
-  font-weight: normal;
+.sec-about .sec-about__txt--designation {
   font-size: 20px; }
 
 .sec-about .sec-about__pic {
-  background-image: url(../images/profile-pic.png);
+  background-image: url(../images/profile-pic.jpg);
   background-size: cover;
   background-position: top center;
-  min-height: 300px; }
+  min-height: 450px;
+  height: 100%; }
 
 @media only screen and (max-width: 420px) {
   .section.sec-about .sec-about__txt {
@@ -596,20 +572,20 @@ img.full-size {
         width: calc(100% - 50px);
         position: relative;
         float: left; }
-        .sec-education .sec-timeline.circle-vertical .timeline li .timeline-panel h2 {
+        .sec-education .sec-timeline.circle-vertical .timeline li .timeline-panel .timeline-content_title {
           font-size: 20px;
           margin: 0;
           padding: 0;
           line-height: 25px;
           color: #ef3f3f; }
-        .sec-education .sec-timeline.circle-vertical .timeline li .timeline-panel h6 {
+        .sec-education .sec-timeline.circle-vertical .timeline li .timeline-panel .timeline-content_year {
           padding: 5px 0;
           margin: 0;
           font-weight: 400;
           font-size: 15px;
           color: #d57e77; }
-        .sec-education .sec-timeline.circle-vertical .timeline li .timeline-panel p {
-          font-size: 13px;
+        .sec-education .sec-timeline.circle-vertical .timeline li .timeline-panel .timeline-content_desc {
+          font-size: 15px;
           margin: 0;
           line-height: 20px;
           color: #bbbbbb; }
@@ -670,7 +646,7 @@ img.full-size {
               left: -10px !important;
               border-left: 0;
               right: auto; }
-            .sec-education .sec-timeline.circle-vertical .timeline li .timeline-panel h2 {
+            .sec-education .sec-timeline.circle-vertical .timeline li .timeline-panel .timeline-content_title {
               font-size: 18px; } }
 
 /*************
@@ -725,7 +701,7 @@ img.full-size {
     .sec-skils .sec-progressbar .progress-bars .progress .progress-bar span {
       padding: 0 7px;
       flex-basis: 100%;
-      font-size: 11px;
+      font-size: 14px;
       line-height: 17px;
       text-transform: uppercase;
       font-weight: 400;
@@ -741,17 +717,28 @@ img.full-size {
   #progress_bar {
     margin: 20px 0 0 0; }
   .progress-bars:first-child {
-    margin-bottom: 35px; } }
+    margin-bottom: 35px; }
+  .skill-content p {
+    text-align: center; } }
+
+@media only screen and (max-width: 992px) {
+  .skill-content p {
+    text-align: center;
+    margin-bottom: 30px; } }
 
 svg.circle-progress {
-  height: 125px;
+  height: 75px;
   transform: rotate(-90deg);
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 25px; }
+
+#progress_bar .row > div:nth-child(n+5) svg.circle-progress {
+  margin-bottom: 0; }
 
 .progress-bar__background {
   fill: none;
   stroke: #e2eff0;
-  stroke-width: 1;
+  stroke-width: 2;
   opacity: 0.2;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20); }
@@ -763,7 +750,7 @@ svg.circle-progress {
   stroke-dasharray: 88 88;
   stroke-dashoffset: 88;
   stroke-linecap: round;
-  stroke-width: 1;
+  stroke-width: 2;
   transition: stroke-dashoffset 1s ease-in-out; }
 
 .skils {
@@ -787,12 +774,15 @@ svg.circle-progress {
   .skils.css circle {
     stroke: #34a7ea; }
   .skils .skil-name {
-    position: absolute;
+    position: relative;
     width: 100%;
-    top: 40px;
-    font-weight: 600; }
+    font-weight: 400; }
     .skils .skil-name .skil-percentage {
-      display: block; }
+      display: block;
+      position: absolute;
+      top: 53px;
+      width: 100%;
+      font-size: 15px; }
 
 /*************
 9. Count Down number
@@ -800,7 +790,6 @@ svg.circle-progress {
 .sec-countdown {
   background: url(../images/work-completed-bg.jpg) #f2f3f4;
   padding: 70px 0 40px 0;
-  font-family: Josefin Sans;
   position: relative;
   background-size: 100%;
   color: #FFF; }
@@ -812,9 +801,11 @@ svg.circle-progress {
     position: relative; }
   .sec-countdown h3 {
     font-size: 20px;
-    margin: 0px;
+    margin: 10px 0 0 0px;
     padding: 0px;
-    position: relative; }
+    position: relative;
+    font-weight: 400;
+    text-transform: uppercase; }
   .sec-countdown .sec-countdown__item {
     margin: 0 0 30px; }
   .sec-countdown .sec-countdown__icon {
@@ -854,16 +845,18 @@ svg.circle-progress {
   margin: 0 !important; }
   .sec-ourwork .work-filter li a {
     cursor: pointer;
-    padding: 9px 25px;
+    padding: 6px 20px;
+    line-height: 25px;
     display: inline-block;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px; }
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; }
     @media only screen and (max-width: 767px) {
       .sec-ourwork .work-filter li a {
         padding: 6px 15px; } }
     .sec-ourwork .work-filter li a.active, .sec-ourwork .work-filter li a:hover, .sec-ourwork .work-filter li a:focus {
-      background: #f58e86; }
+      background: #f58e86;
+      color: #ffffff; }
   .sec-ourwork .work-filter li:not(:last-child):after {
     content: "/";
     padding: 0 20px; }
@@ -916,9 +909,10 @@ svg.circle-progress {
   position: relative;
   height: 100%; }
   .sec-ourwork .sec-ourwork__des h4 {
-    font-size: 14px;
+    font-size: 20px;
     padding: 20px 10px;
-    margin: 0px; }
+    margin: 0px;
+    font-weight: 400; }
   .sec-ourwork .sec-ourwork__des .fa {
     bottom: 15px;
     right: 15px;
@@ -926,9 +920,6 @@ svg.circle-progress {
 
 .sec-ourwork .sec-ourwork__pic {
   width: 100%;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
   transition: all 0.2s linear; }
 
 @media only screen and (max-width: 767px) {
@@ -938,6 +929,72 @@ svg.circle-progress {
     padding: 10px;
     font-size: 13px;
     font-weight: normal; } }
+
+/*************
+10: Services
+*******************/
+.sec-services .sec-services__icon {
+  color: #f58e86; }
+
+.sec-services .sec-services__text {
+  margin: 0 0 20px; }
+
+.sec-services .sec-services__img img {
+  width: 100%; }
+
+.sec-services .sec-services__item {
+  margin: 0 0 0px; }
+
+.sec-services h3 {
+  font-size: calc(16px + (21 - 16) * ((100vw - 350px) / (1600 - 350)));
+  text-transform: uppercase; }
+
+.sec-services .sec-service_content .fa-html5 {
+  color: #ff7f50; }
+
+.sec-services .sec-service_content .fa-laptop {
+  color: #166696; }
+
+.sec-services .sec-service_content .fa-cogs {
+  color: #855ac5; }
+
+.sec-services .sec-service_content .fa-rocket {
+  color: #82c55a; }
+
+.sec-services .btn {
+  background: #f1f2f3;
+  border: 1px solid #ccc;
+  color: #333;
+  line-height: 20px;
+  font-size: 15px;
+  box-shadow: 0px 0px 0; }
+  .sec-services .btn:hover {
+    box-shadow: 0px 3px 6px #d9dadc; }
+
+@media only screen and (max-width: 992px) {
+  .sec-services {
+    margin: 0px; }
+    .sec-services .sec-services__item:first-child {
+      margin-bottom: 40px; } }
+
+/*************
+10: Blog
+*******************/
+.post-entry {
+  margin: 0 0 0px; }
+  .post-entry .card-title {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 0;
+    margin: 0 0 10px;
+    font-family: Open Sans, sans-serif; }
+
+@media only screen and (max-width: 992px) {
+  .post-entry {
+    margin: 0 0 30px; }
+    .post-entry:last-child {
+      margin-bottom: 0px; } }
 
 /*************
 11: Contact
@@ -1013,7 +1070,8 @@ svg.circle-progress {
 .sec-copyright {
   background: #434241;
   line-height: 50px;
-  color: #f1f2f3; }
+  color: #f1f2f3;
+  font-size: 13px; }
 
 /*************
 13: IE Warning Message

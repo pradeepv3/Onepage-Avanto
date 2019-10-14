@@ -63,7 +63,7 @@
                     & span {
                         padding: 0 7px;
                         flex-basis: 100%;
-                        font-size: 11px;
+                        font-size: 14px;
                         line-height: 17px;
                         text-transform: uppercase;
                         font-weight: 400;
@@ -103,17 +103,41 @@
             margin-bottom: 35px;
         }
     }
+
+    .skill-content p {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .skill-content p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
 
 // SVG progress bar
-$progress-bar-stroke-width: 1;
-$progress-bar-size: 125px;
+$progress-bar-stroke-width: 2;
+$progress-bar-size: 75px;
+
 
 svg.circle-progress {
     height: $progress-bar-size;
     transform: rotate(-90deg);
     width: 100%;
+    margin-bottom: 25px;
+}
+
+#progress_bar {
+    & .row>div {
+        &:nth-child(n+5) {
+            & svg.circle-progress {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 .progress-bar__background {
@@ -174,13 +198,17 @@ svg.circle-progress {
     }
 
     & .skil-name {
-        position: absolute;
+        position: relative;
         width: 100%;
-        top: 40px;
-        font-weight: 600;
+        //top: 40px;
+        font-weight: 400;
 
         & .skil-percentage {
             display: block;
+            position: absolute;
+            top: 53px;
+            width: 100%;
+            font-size: 15px;
         }
     }
 }
