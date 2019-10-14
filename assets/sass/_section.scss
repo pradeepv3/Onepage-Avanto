@@ -1,28 +1,31 @@
 .section {
-    margin: 0;
+  margin: 0;
+  
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  & .section-content {
     padding: 50px 0;
 
-    &:first-child {
-        padding-top: 0;
+    & .sec-title {
+      display: block;
+      flex-basis: 100%;
+      padding: 0 0 3px;
+      margin-bottom: 20px;
+      font-size: 35px;
+      text-align: center;
+
+      @media only screen and (max-width: 420px) {
+        font-size: 25px;
+      }
     }
+  }
 
-    & .section-content {
-
-        & .section-title {
-            display: block;
-            flex-basis: 100%;
-            padding: 0 0 3px;
-            margin-bottom: 20px;
-            font-size: 35px;
-            text-align: center;
-
-            @media only screen and (max-width: 420px) {
-                font-size: 25px;
-            }
-        }
+  &.sec-banner {
+    .section-content {
+      padding: 0;
     }
-
-
-
-
+  }
 }

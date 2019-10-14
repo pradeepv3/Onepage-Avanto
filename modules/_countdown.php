@@ -4,7 +4,7 @@
 		<h2 class="sec-title br-line text-center">Works Completed</h2>
 		<div class="row">
 
-			<div class="col-6 col-md-3 sec-countdown__item wow zoomIn">
+			<div class="col-6 col-md-3 sec-countdown__item">
 				<div class="circle-icon sec-countdown__icon">
 					<span class="fa fa-laptop fa-circle-icon"></span>
 				</div>
@@ -12,7 +12,7 @@
 				<h3>Web Design</h3>
 			</div>
 
-			<div class="col-6 col-md-3 sec-countdown__item wow zoomIn">
+			<div class="col-6 col-md-3 sec-countdown__item">
 				<div class="circle-icon sec-countdown__icon">
 					<span class="fa fa-rocket fa-circle-icon"></span>
 				</div>
@@ -20,7 +20,7 @@
 				<h3>Logo</h3>
 			</div>
 
-			<div class="col-6 col-md-3 sec-countdown__item wow zoomIn">
+			<div class="col-6 col-md-3 sec-countdown__item">
 				<div class="circle-icon sec-countdown__icon">
 					<span class="fa fa-heart fa-circle-icon"></span>
 				</div>
@@ -28,7 +28,7 @@
 				<h3>App</h3>
 			</div>
 
-			<div class="col-6 col-md-3 sec-countdown__item wow zoomIn">
+			<div class="col-6 col-md-3 sec-countdown__item">
 				<div class="circle-icon sec-countdown__icon">
 					<span class="fa fa-wordpress fa-circle-icon"></span>
 				</div>

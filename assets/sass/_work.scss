@@ -20,9 +20,10 @@
 
 			a {
 				cursor: pointer;
-				padding: 9px 25px;
+				padding: 6px 20px;
+				line-height: 25px;
 				display: inline-block;
-				@include border-radius(30px);
+				@include border-radius(5px);
 
 				@media only screen and (max-width: 767px) {
 					padding: 6px 15px;
@@ -32,6 +33,7 @@
 				&:hover,
 				&:focus {
 					background: #f58e86;
+					color: #ffffff;
 				}
 			}
 
@@ -128,9 +130,10 @@
 		height: 100%;
 
 		& h4 {
-			font-size: 14px;
+			font-size: 20px;
 			padding: 20px 10px;
 			margin: 0px;
+			font-weight: 400;
 		}
 
 		& .fa {

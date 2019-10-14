@@ -84,7 +84,7 @@
                         //     right: -15px;
                         // }
 
-                        h2 {
+                        .timeline-content_title {
                             font-size: 20px;
                             margin: 0;
                             padding: 0;
@@ -92,7 +92,7 @@
                             color: #ef3f3f;
                         }
 
-                        h6 {
+                        .timeline-content_year {
                             padding: 5px 0;
                             margin: 0;
                             font-weight: 400;
@@ -100,8 +100,8 @@
                             color: #d57e77;
                         }
 
-                        p {
-                            font-size: 13px;
+                        .timeline-content_desc {
+                            font-size: 15px;
                             margin: 0;
                             line-height: 20px;
                             color: #bbbbbb;
@@ -199,7 +199,7 @@
                                 right: auto;
                             }
 
-                            h2 {
+                            .timeline-content_title {
                                 font-size: 18px;
                             }
                         }

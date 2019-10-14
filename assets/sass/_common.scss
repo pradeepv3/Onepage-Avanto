@@ -1,8 +1,4 @@
 body {
-	font-family: $fontFamily;
-	font-size: 14px;
-	line-height: 1.7;
-	font-weight: 400;
 	color: $bodyFontColor;
 }
 
@@ -13,11 +9,7 @@ body {
 a,
 .btn,
 button,
-input[type="submit"] {
-	@include transition();
-}
-
-.fa {
+input[type="submit"],.fa {
 	@include transition();
 }
 
@@ -28,24 +20,6 @@ a {
 	&:focus {
 		color: $anchorColorHover;
 	}
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-	margin-top: 0;
-	padding: 0 0 15px;
-	font-weight: 600;
-	font-family: $headingFont
 }
 
 .navbar-brand {
@@ -59,95 +33,9 @@ video {
 
 .fixed-nav-bg {
 	background: #FFF;
-	@include box-shadow(1px, 3px, 10px, #B7B7B7);
+	border-bottom: 1px solid #DADADA;
 }
 
-.btn,
-button {
-	padding: 10px 20px;
-	@include border-radius(30px);
-	border: 0;
-	font-size: 14px;
-	color: $buttonLightColor;
-	background: $buttonLightBgColor;
-
-	&:hover,
-	&:focus,
-	&:active {
-		color: $buttonLightHoverColor;
-		background: $buttonLightHoverBgColor;
-		@include box-shadow(0, 0, 0, transparent);
-	}
-
-	&.dark {
-		color: $buttonDarkColor;
-		background: $buttonDarkBgColor;
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: $buttonDarkHoverColor;
-			background: $buttonDarkHoverBgColor;
-		}
-	}
-
-	&.btn-submit .fa {
-		margin: 0 10px 0 0;
-	}
-
-	&.btn-transparent {
-		background: $buttonTransparentBgColor;
-		border: 2px solid $buttonTransparentBdrColor;
-		@include border-radius(3px);
-
-		&:hover {
-			background: $buttonTransparentHoverBgColor;
-		}
-	}
-
-	&.btn-transparent-banner {
-		background: $buttonTransparentBgColor;
-		border: 1px solid #FFF;
-		padding: 12px 35px;
-		font-size: 16px;
-		position: relative;
-
-		&:after,
-		&:before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			left: 0;
-		}
-
-		&:before {
-			right: 0;
-		}
-
-		&:hover {
-
-			color: #FFF;
-			@include box-shadow(0px, 2px, 23px, #FFF, true);
-		}
-	}
-
-	&.btn-white {
-		background-color: #FFF;
-		border: 2px solid #448aff;
-		color: #448aff !important;
-
-		&:hover {
-			background: #448aff;
-			color: #FFF !important;
-		}
-	}
-
-	&.btn-custom {
-		font-size: 17px;
-		padding: 15px 35px;
-
-	}
-}
 
 
 label {
