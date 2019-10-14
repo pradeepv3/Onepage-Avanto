@@ -1,40 +1,51 @@
-var gulp = require('gulp');
-var changed = require('gulp-changed');
-var sass = require('gulp-sass');
-var wait = require('gulp-wait');
-var cssbeautify = require('gulp-cssbeautify');
-var sourcemaps = require("gulp-sourcemaps");
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const wait = require('gulp-wait');
+//var cssbeautify = require('gulp-cssbeautify');
+const sourcemaps = require("gulp-sourcemaps");
+const browserSync = require('browser-sync').create();
+const autoprefix = require('gulp-autoprefixer');
 
 // SASS File Directory and CSS Destination Directory
 var SassSRC = './assets/sass/*.scss';
 var SassDest = './css/';
 
-// On Sass file Change
-gulp.task('changed', function () {
-    return gulp.src(SassSRC)
-        .pipe(changed(SassDest))
-        .pipe(gulp.dest(SassDest));
-});
+const paths = {
+    sass: './assets/sass/*.scss',
+};
 
-// SASS compilation
-gulp.task('sass', function () {
-    gulp.src(SassSRC)
+const config = {
+  styles: {
+    browsers: [
+      'ie 11',
+      'edge >= 16',
+      'chrome >= 70',
+      'firefox >= 63',
+      'safari >= 11',
+      'iOS >= 12',
+      'ChromeAndroid >= 70',
+    ]
+  }
+};
+
+
+function style() {
+    return gulp.src(SassSRC)
         .pipe(wait(500))
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        // .pipe(cssbeautify({
-        //     indent: '  ',
-        //     openbrace: 'separate-line',
-        //     autosemicolon: true
-        // }))
+        .pipe(autoprefix( {overrideBrowserslist: config.styles.browsers} ))
         .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest(SassDest));
-});
+        .pipe(gulp.dest(SassDest))
+        
+        .pipe(browserSync.stream());
+}
 
-// Watch Task
-gulp.task('watch', function () {
-    gulp.watch(SassSRC, ['sass']);
-});
+function watch() {
+    gulp.watch(SassSRC, style);
+}
 
-// Default task when you run gulp command
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', watch)
+
+// exports.style = style;
+// exports.watch = watch;

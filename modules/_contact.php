@@ -1,8 +1,8 @@
-<div class="container sec-contact wow zoomIn ">
+<div class="container sec-contact">
 	<div class="row">
 
 		<div class="col-12 col-lg-8 offset-lg-2">
-			<h2 class="section-title  br-line">
+			<h2 class="sec-title  br-line">
 				Contact
 			</h2>
 			<p class="text-center">English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family.</p>

@@ -2,21 +2,20 @@
 	<div class="row">
 		<!-- Skill Top Section -->
 		<div class="col-12 col-lg-8 offset-lg-2">
-			<h2 class="section-title  br-line">
+			<h2 class="sec-title  br-line">
 				Skils
 			</h2>
-			<p class="text-center">English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family.</p>
 		</div>
 		<!-- skill top section end -->
 	</div>
 </div>
 
-<div class="mt-5 skill-wraapper sec-progressbar content-overlay_before">
+<div class="mt-0 skill-wraapper sec-progressbar content-overlay_before">
 	<div class="container">
 	    <div class="row skill-content">
 			<!-- Skill Content -->
 			<div class="col-12 col-lg-6">
-				<p>English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family.</p><p>English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family.</p>
+            <p>English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members  friend of mine told me what Occidental is.The European languages are members of the same family.</p>
 			</div>
 			<!-- Skil Progress bar-->
 			<div class="col-12 col-lg-6">

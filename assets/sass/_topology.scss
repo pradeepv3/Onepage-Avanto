@@ -1,0 +1,41 @@
+body {
+  font-family: Open Sans, sans-serif;
+	font-size: 15px;
+	line-height: 1.7;
+	font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0 0 15px;
+	font-weight: 600;
+  font-family: Open Sans, sans-serif;
+  
+}
+
+h2 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 350px) / (1600 - 350)));
+}
+
+
+.banner .banner-content h2,
+.banner .banner-content h3 {
+  font-family: Merienda, Open Sans, sans-serif;
+  font-size: calc(35px + (45 - 35) * ((100vw - 350px) / (1600 - 350)));
+  padding: 0 0 35px;
+}
+.banner .banner-content h3 {
+  font-size: calc(30px + (40 - 30) * ((100vw - 350px) / (1600 - 350)));
+}
+
+p {
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.sec-title {
+	font-family: Merienda, Source Sans Pro, sans-serif;
+	text-align: center;
+	font-weight: 400;
+}
+

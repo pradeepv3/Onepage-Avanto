@@ -1,5 +1,5 @@
 <nav id="navbar" class="navbar-collapse collapse">
-	<ul class="navbar-nav float-md-right">
+	<ul class="navbar-nav ml-auto">
 		<li class="nav-item dropdown brand-nav-link">
 			<a class="nav-link js-scroll-trigger d-md-none d-lg-none" href="index.php">Avanto</a>
 		</li>
@@ -17,6 +17,12 @@
 		</li>
 		<li class="nav-item dropdown">
 			<a class="nav-link js-scroll-trigger" href="#work">Work </a>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link js-scroll-trigger" href="#services">Services </a>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link js-scroll-trigger" href="#blog">Blog </a>
 		</li>
 		<li class="nav-item dropdown">
 			<a class="nav-link js-scroll-trigger" href="#contact">Contact </a>

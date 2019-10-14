@@ -45,6 +45,18 @@
 				</div>
 			</section>
 
+			<section class="section sec-services" id="services">
+				<div class="section-content">
+					<?php include "modules/_services.php"?>
+				</div>
+			</section>
+
+			<section class="section sec-blog" id="blog">
+				<div class="section-content">
+					<?php include "modules/_blog.php"?>
+				</div>
+			</section>
+
 			<section class="section sec-contact" id="contact">
 				<div class="section-content">
 					<?php include "modules/_contact.php"?>
