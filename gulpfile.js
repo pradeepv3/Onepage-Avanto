@@ -22,7 +22,7 @@ const config = {
       'chrome >= 70',
       'firefox >= 63',
       'safari >= 11',
-      'iOS >= 12',
+      'iOS >= 13',
       'ChromeAndroid >= 70',
     ]
   }
