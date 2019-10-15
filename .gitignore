@@ -3,3 +3,7 @@ node_modules
 .vscode
 temp
 tf-files
+assets
+gulpfile.js
+package.json
+package-lock.json
