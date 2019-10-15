@@ -5,5 +5,10 @@ assets
 gulpfile.js
 package.json
 package-lock.json
+.sass-cache/
+css/maps
+*.css.map
+*.sass.map
+*.scss.map
 .vscode
 temp
