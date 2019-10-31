@@ -1,0 +1,214 @@
+.sec-skils {
+    .skill-wraapper {
+        background: #333 url(../images/skils-bg.jpeg);
+        background-size: cover;
+        color: #ffffff;
+        padding: 60px 0;
+        position: relative;
+
+        & .skill-content {
+            align-items: center;
+        }
+    }
+
+    .sec-progressbar {
+        & .progress-bars {
+            & .bg-nodejs {
+                background-color: $nodejs;
+            }
+
+            & .bg-angular {
+                background-color: $angular;
+            }
+
+            & .bg-js {
+                background-color: $js;
+            }
+
+            & .bg-adobeillus {
+                background-color: $illustrator
+            }
+
+            & .bg-photoshop {
+                background-color: $photoshop
+            }
+
+            & .bg-php {
+                background-color: $php;
+            }
+
+            & .bg-html {
+                background-color: $html;
+            }
+
+            & .bg-css {
+                background-color: $css;
+            }
+
+            & .progress {
+                overflow: visible;
+                height: .5rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+
+                & .progress-bar {
+                    flex-direction: row;
+                    position: relative;
+                    transition: width 2s ease;
+                    width: 0%;
+                    @include border-radius(3px);
+
+                    & span {
+                        padding: 0 7px;
+                        flex-basis: 100%;
+                        font-size: 14px;
+                        line-height: 17px;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        position: absolute;
+                        left: 0;
+                        color: #ccc;
+                        top: -20px;
+                    }
+
+                    & span.percentage {
+                        right: 0;
+                        padding-right: 0;
+
+                        // &:after {
+                        // 	content: "";
+                        // 	border-top: 7px solid #858585;
+                        // 	border-left: 5px solid transparent;
+                        // 	border-right: 5px solid transparent;
+                        // 	position: relative;
+                        // 	top: 20px;
+                        // 	right: -3px;
+                        // }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #progress_bar {
+        margin: 20px 0 0 0;
+    }
+
+    .progress-bars {
+        &:first-child {
+            margin-bottom: 35px;
+        }
+    }
+
+    .skill-content p {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .skill-content p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+
+// SVG progress bar
+$progress-bar-stroke-width: 2;
+$progress-bar-size: 75px;
+
+
+svg.circle-progress {
+    height: $progress-bar-size;
+    transform: rotate(-90deg);
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#progress_bar {
+    & .row>div {
+        &:nth-child(n+5) {
+            & svg.circle-progress {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.progress-bar__background {
+    fill: none;
+    stroke: #e2eff0;
+    stroke-width: $progress-bar-stroke-width;
+    @include Opacity(.2);
+}
+
+.progress-bar__progress {
+    fill: none;
+    stroke: #e2eff0;
+    stroke: #78bec7;
+    stroke-dasharray: 88 88;
+    stroke-dashoffset: 88;
+    stroke-linecap: round;
+    stroke-width: $progress-bar-stroke-width;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.skils {
+    position: relative;
+
+    &.html circle {
+        stroke: $html;
+    }
+
+    &.nodejs circle {
+        stroke: $nodejs;
+    }
+
+    &.angular circle {
+        stroke: $angular;
+    }
+
+    &.js circle {
+        stroke: $js;
+    }
+
+    &.illustrator circle {
+        stroke: $illustrator
+    }
+
+    &.photoshop circle {
+        stroke: $photoshop
+    }
+
+    &.php circle {
+        stroke: $php;
+    }
+
+    &.html circle {
+        stroke: $html;
+    }
+
+    &.css circle {
+        stroke: $css;
+    }
+
+    & .skil-name {
+        position: relative;
+        width: 100%;
+        //top: 40px;
+        font-weight: 400;
+
+        & .skil-percentage {
+            display: block;
+            position: absolute;
+            top: 53px;
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+//FONT FAMILY
+$fontFamily: Open Sans,sans-serif;
+
+$headingFont: Open Sans, sans-serif;
+
+$sectionHeading: Merienda, Open Sans,sans-serif;
+
+// FONT COLORS
+$bodyFontColor: #333;
+
+//Header Menu
+$brandNameColor: #FFF;
+$brandNameFixedHeaderColor: #000;
+$brandHoverColor: #f58e86;
+
+$brandBgColorMobile: #000;
+$brandColorMobile: #f58e86;
+
+$navHighLightColor: #f58e86; //nav highlight color used for hover and active class
+$navColor: #FFF;
+$navHoverColor: $navHighLightColor;
+$navActiveColor: $navHighLightColor;
+
+$navFixedColor: #000;
+$navFixedHoverColor: $navHighLightColor;
+$navFixedActiveColor: $navHighLightColor;
+
+$navMobileColor: #000;
+$navMobileBgColor: #F1F2F3;
+$navMobileHoverColor: $navHighLightColor;
+$navMobileActiveColor: $navHighLightColor;
+$navMobileBorderColor: #e5e5e5;
+
+$navCloseBttonColor: #CCC;
+
+
+// ANCHOR COLORS 
+$anchorColor:#d57e77;
+$anchorColorHover:#f58e86;
+
+$faColor:#FFF;
+$faBorderColor: #333;
+$faBackgroundrColor: #d57e77;
+
+// BUTTON COLORS 
+$buttonLightColor: #FFF;
+$buttonLightBgColor: #f58e86;
+$buttonLightHoverColor: #FFF;
+$buttonLightHoverBgColor: #d57e77;
+
+$buttonDarkColor: #FFF;
+$buttonDarkBgColor: #d57e77;
+$buttonDarkHoverColor: #FFF;
+$buttonDarkHoverBgColor: #f58e86;
+
+$buttonTransparentColor: #FFF;
+$buttonTransparentBgColor: transparent;
+$buttonTransparentBdrColor:#d57e77;
+$buttonTransparentHoverBgColor: #f58e86;
+
+// FOOTER COLORS 
+$footerBgColor: #f1f2f3;
+$footerBdrColor: #ccc;
+$copyRightBgColor: #434241;
+$copyRightColor: #f1f2f3;
+
+//Brand Colors
+$nodejs: #3C873A;
+$angular: #b52e31;
+$js: #f0db4f;
+$illustrator: #fbb034;
+$photoshop: #00a4e4;
+$php: #4f5b93;
+$html: #e34f26;
+$css: #34a7ea;
