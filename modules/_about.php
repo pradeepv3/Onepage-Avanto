@@ -15,7 +15,7 @@
 
 		<!-- About US Profile DEscription -->
 		<div class="col-12 col-lg-6 mt-5 sec-about__txt">
-			<h2 class="sec-about__txt--name">Rock Start Perter</h2>
+			<h2 class="sec-about__txt--name">Peter Scott</h2>
 			<h4 class="sec-about__txt--designation">UI/UX Designer</h4>
 			<p>Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To</p>
 			<p>To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is.The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. </p>

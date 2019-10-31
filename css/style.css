@@ -452,6 +452,11 @@ h2
   font-size: calc(30px + (40 - 30) * ((100vw - 350px) / (1600 - 350)));
 }
 
+.navbar-brand
+{
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .banner .banner-content h2,
 .banner .banner-content h3
 {
@@ -775,7 +780,7 @@ p
   display: block;
   flex-basis: 100%;
   padding: 0 0 3px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   font-size: 35px;
   text-align: center;
 }
