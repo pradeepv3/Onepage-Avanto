@@ -58,7 +58,7 @@
                     position: relative;
                     transition: width 2s ease;
                     width: 0%;
-                    @include border-radius(3px);
+                    border-radius: 3px;
 
                     & span {
                         padding: 0 7px;
@@ -144,7 +144,7 @@ svg.circle-progress {
     fill: none;
     stroke: #e2eff0;
     stroke-width: $progress-bar-stroke-width;
-    @include Opacity(.2);
+    opacity: .2;
 }
 
 .progress-bar__progress {

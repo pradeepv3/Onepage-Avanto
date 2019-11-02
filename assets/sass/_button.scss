@@ -1,7 +1,7 @@
 .btn,
 button {
 	padding: 10px 20px;
-	@include border-radius(5px);
+	border-radius: 5px;
 	border: 0;
 	color: $buttonLightColor;
 	background: $buttonLightBgColor;
@@ -11,7 +11,7 @@ button {
 	&:active {
 		color: $buttonLightHoverColor;
 		background: $buttonLightHoverBgColor;
-		@include box-shadow(0, 0, 0, transparent);
+		box-shadow: 0 0 0 transparent;
 	}
 
 	&.dark {
@@ -33,7 +33,7 @@ button {
 	&.btn-transparent {
 		background: $buttonTransparentBgColor;
 		border: 2px solid $buttonTransparentBdrColor;
-		@include border-radius(3px);
+		border-radius: 3px;
 
 		&:hover {
 			background: $buttonTransparentHoverBgColor;
@@ -60,9 +60,8 @@ button {
 		}
 
 		&:hover {
-
 			color: #FFF;
-			@include box-shadow(0px, 2px, 23px, #FFF, true);
+			box-shadow: inset 0px 2px 23px #FFF;
 		}
 	}
 

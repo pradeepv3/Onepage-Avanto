@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans%7cJosefin+Sans" rel="stylesheet" type="text/css" />
 	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="css/bootstrap-4.1.3.min.css" rel="stylesheet" type="text/css" />
-	<link href="css/home.css" rel="stylesheet" type="text/css" />
+	<link href="css/home.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -79,20 +79,14 @@
 			</section>
 			<section class="feature">
 			<div class="container">
-			<p>Avanto is a one-page responsive portfolio layout which can be utilized to demonstrate your works. I have developed this page using PHP, HTML5 and  SASS. This flexible template uses fresh and clean design.</p>
+			<p>Avanto One page responsive portfolio layout which can be utilized to demonstrate your works. I have developed this page using PHP, HTML5 and  SASS. This flexible template uses fresh and clean design.</p>
 			<h2>What you get?</h2>
 				<ul>
-					<li>Bootstrap 4.3.1</li>
 					<li>7 Different Home Pages</li>
 					<li>Sass Files</li>
-					<li>Built with HTML5 &amp; CSS3</li>
+					<li>Gulp File</li>
 					<li>Font Awesome Icons</li>
 					<li>Google Fonts</li>
-					<li>Easy to Customize</li>
-					<li>Clean code</li>
-					<li>W3 Valid 100%</li>
-					<li>Browser Compatibility</li>
-					<li>Modern Design</li>
 			</ul>
 			</div>
 				

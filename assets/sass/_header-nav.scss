@@ -144,7 +144,7 @@
 			height: 100%;
 			width: 200px;
 			z-index: 9999;
-			@include transition();
+			transition: all .2s linear;
 
 			& .navbar-nav {
 				flex-direction: column;

@@ -1,109 +1,26 @@
 /*
 Theme: Avanto Protfolio One Page Design
-Author: Inkowly
-contact: inkowly@gmail.com
-Version: 1.0.0                                              
-Created: October 2018                                       
+Author: pradeep
+contact: vpradeep.velu@gmail.com
+Version: 1.0.0
 File Description: Main css file
 */
 
-@import "_mixins";
 @import "_variables";
-
-/*****************************
-1. Common
-2. Parallax Effect
-3. Header Navigation / Mobile
-4. Banners 
-5. Section Common
-6. About
-7. Education / Works Timeline
-8. Skils
-9. Count Down number
-10: Work Mix up
-11. Contact
-12. Footer Section
-13. IE Warning Message
-*******************************/
-
-
-/*************
-1. Common
-*******************/
 @import "_common";
-
-
 @import "_button";
-
 @import "_topology";
-
-/*************
-2. Parallax effect 
-*******************/
 @import "_parallax";
-
-/*************
-3. Header Navigation / Mobile
-*******************/
 @import "_header-nav";
-
-/*************
-4. Banners
-*******************/
 @import "_banners";
-
-/*************
-5. Section Common
-*******************/
 @import "_section";
-
-/*************
-6. About Common
-*******************/
 @import "_about";
-
-/*************
-7. Education / Works Timeline
-*******************/
 @import "_education";
-
-/*************
-8. Progress Bar
-*******************/
 @import "_skils";
-
-/*************
-9. Count Down number
-*******************/
 @import "_countdown";
-
-/*************
-10: Work Mix up
-*******************/
 @import "_work";
-
-/*************
-10: Services
-*******************/
 @import "_services";
-
-/*************
-10: Blog
-*******************/
 @import "_blog";
-
-
-/*************
-11: Contact
-*******************/
 @import "_contact";
-
-/*************
-12: Footer
-*******************/
 @import "_footer";
-
-/*************
-13: IE Warning Message
-*******************/
 @import "_ie-warning-msg";

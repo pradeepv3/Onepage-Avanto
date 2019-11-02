@@ -10,7 +10,7 @@ a,
 .btn,
 button,
 input[type="submit"],.fa {
-	@include transition();
+	transition: all .2s linear;
 }
 
 a {
@@ -55,7 +55,6 @@ textarea {
 
 input[type="submit"] {
 	padding: 7px 25px;
-	//@include border-radius(50px);
 }
 
 input[type="submit"]:hover {}
@@ -68,7 +67,7 @@ input[type="submit"]:hover {}
 	border: 0;
 	z-index: 0;
 	height: 100%;
-	@include Opacity(.5);
+	opacity: .5;
 }
 
 .page-overlay {
@@ -125,7 +124,7 @@ p.txt-lg {
 			font-size: 17px;
 			line-height: 30px;
 			color: #FFF;
-			@include border-radius(50%);
+			border-radius: 50%;
 
 			&.facebook {
 				background: #3b5999;
@@ -153,7 +152,7 @@ p.txt-lg {
 				color: $faColor;
 				background: $faBackgroundrColor;
 				border-color: transparent;
-				@include box-shadow(1px, 4px, 7px, #868686);
+				box-shadow: 1px 4px 7px #868686;
 			}
 		}
 	}
@@ -207,7 +206,7 @@ img {
 	width: 80px;
 	height: 80px;
 	margin: 0 auto 20px;
-	@include border-radius(100%);
+	border-radius: 100%;
 	line-height: 80px;
 	text-align: center;
 	vertical-align: middle;

@@ -1,29 +1,10 @@
 /*
 Theme: Avanto Protfolio One Page Design
-Author: Inkowly
-contact: inkowly@gmail.com
-Version: 1.0.0                                              
-Created: October 2018                                       
+Author: pradeep
+contact: vpradeep.velu@gmail.com
+Version: 1.0.0
 File Description: Main css file
 */
-/*****************************
-1. Common
-2. Parallax Effect
-3. Header Navigation / Mobile
-4. Banners 
-5. Section Common
-6. About
-7. Education / Works Timeline
-8. Skils
-9. Count Down number
-10: Work Mix up
-11. Contact
-12. Footer Section
-13. IE Warning Message
-*******************************/
-/*************
-1. Common
-*******************/
 body
 {
   color: #333;
@@ -39,7 +20,7 @@ a,
 button,
 input[type="submit"], .fa
 {
-  transition: all 0.2s linear;
+  transition: all .2s linear;
 }
 
 a
@@ -100,9 +81,7 @@ input[type="submit"]
   border: 0;
   z-index: 0;
   height: 100%;
-  opacity: 0.5;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  filter: alpha(opacity=50);
+  opacity: .5;
 }
 
 .page-overlay
@@ -156,8 +135,6 @@ p.txt-lg
   line-height: 30px;
   color: #FFF;
   border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
 }
 
 .social a .fa.facebook
@@ -243,8 +220,6 @@ img.full-size
   height: 80px;
   margin: 0 auto 20px;
   border-radius: 100%;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
   line-height: 80px;
   text-align: center;
   vertical-align: middle;
@@ -321,8 +296,6 @@ button
 {
   padding: 10px 20px;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border: 0;
   color: #FFF;
   background: #f58e86;
@@ -366,8 +339,6 @@ button
   background: transparent;
   border: 2px solid #d57e77;
   border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
 }
 
 .btn.btn-transparent:hover,
@@ -483,9 +454,6 @@ p
   font-weight: 400;
 }
 
-/*************
-2. Parallax effect 
-*******************/
 .parallax
 {
   background-position: 50% 50%;
@@ -503,9 +471,6 @@ p
   }
 }
 
-/*************
-3. Header Navigation / Mobile
-*******************/
 .navbar .navbar-brand
 {
   z-index: 99;
@@ -633,7 +598,7 @@ p
     height: 100%;
     width: 200px;
     z-index: 9999;
-    transition: all 0.2s linear;
+    transition: all .2s linear;
   }
 
   .navbar .navbar-collapse .navbar-nav
@@ -676,9 +641,6 @@ p
   }
 }
 
-/*************
-4. Banners
-*******************/
 .banner
 {
   min-height: 100vh;
@@ -694,9 +656,7 @@ p
   left: 0;
   height: 100%;
   right: 0;
-  opacity: 0.7;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-  filter: alpha(opacity=70);
+  opacity: .7;
   background: #333;
 }
 
@@ -757,9 +717,6 @@ p
   }
 }
 
-/*************
-5. Section Common
-*******************/
 .section
 {
   margin: 0;
@@ -798,9 +755,6 @@ p
   padding: 0;
 }
 
-/*************
-6. About Common
-*******************/
 .sec-about .sec-about__txt--name
 {
   margin: 0;
@@ -834,9 +788,6 @@ p
   }
 }
 
-/*************
-7. Education / Works Timeline
-*******************/
 .sec-education .section-content
 {
   position: relative;
@@ -1053,9 +1004,6 @@ p
   }
 }
 
-/*************
-8. Progress Bar
-*******************/
 .sec-skils .skill-wraapper
 {
   background: #333 url(../images/skils-bg.jpeg);
@@ -1128,8 +1076,6 @@ p
   transition: width 2s ease;
   width: 0%;
   border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
 }
 
 .sec-skils .sec-progressbar .progress-bars .progress .progress-bar span
@@ -1197,9 +1143,7 @@ svg.circle-progress
   fill: none;
   stroke: #e2eff0;
   stroke-width: 2;
-  opacity: 0.2;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
-  filter: alpha(opacity=20);
+  opacity: .2;
 }
 
 .progress-bar__progress
@@ -1280,9 +1224,6 @@ svg.circle-progress
   font-size: 15px;
 }
 
-/*************
-9. Count Down number
-*******************/
 .sec-countdown
 {
   background: url(../images/work-completed-bg.jpg) #f2f3f4;
@@ -1294,9 +1235,7 @@ svg.circle-progress
 
 .sec-countdown .content-overlay
 {
-  opacity: 0.9;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-  filter: alpha(opacity=90);
+  opacity: .9;
 }
 
 .sec-countdown h2
@@ -1357,9 +1296,6 @@ svg.circle-progress
   }
 }
 
-/*************
-10: Work Mix up
-*******************/
 .sec-ourwork .sec-ourwork-controls
 {
   padding: 0 0 15px;
@@ -1390,8 +1326,6 @@ svg.circle-progress
   line-height: 25px;
   display: inline-block;
   border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
 }
 
 @media only screen and (max-width: 767px)
@@ -1435,9 +1369,7 @@ svg.circle-progress
 
 .sec-ourwork .sec-ourwork-content:hover .sec-ourwork-overlay:before
 {
-  opacity: 0.5;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  filter: alpha(opacity=50);
+  opacity: .5;
 }
 
 .sec-ourwork .sec-ourwork-content:hover .sec-ourwork__pic
@@ -1470,8 +1402,6 @@ svg.circle-progress
   background: #333;
   z-index: 2;
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   cursor: pointer;
 }
 
@@ -1503,7 +1433,7 @@ svg.circle-progress
 .sec-ourwork .sec-ourwork__pic
 {
   width: 100%;
-  transition: all 0.2s linear;
+  transition: all .2s linear;
 }
 
 @media only screen and (max-width: 767px)
@@ -1521,9 +1451,6 @@ svg.circle-progress
   }
 }
 
-/*************
-10: Services
-*******************/
 .sec-services .sec-services__icon
 {
   color: #f58e86;
@@ -1598,9 +1525,6 @@ svg.circle-progress
   }
 }
 
-/*************
-10: Blog
-*******************/
 .post-entry
 {
   margin: 0 0 0px;
@@ -1629,9 +1553,6 @@ svg.circle-progress
   }
 }
 
-/*************
-11: Contact
-*******************/
 .sec-contact > div *:not(div):last-child
 {
   margin: 0;
@@ -1655,9 +1576,6 @@ svg.circle-progress
   color: #f58e86;
 }
 
-/*************
-12: Footer
-*******************/
 .sec-footer
 {
   background: #f1f2f3;
@@ -1769,9 +1687,6 @@ svg.circle-progress
   font-size: 13px;
 }
 
-/*************
-13: IE Warning Message
-*******************/
 .ie-warning
 {
   background: #333;
@@ -1809,4 +1724,4 @@ svg.circle-progress
   padding: 0 0 10px;
 }
 
-/*# sourceMappingURL=maps/style.css.map */
+/*# sourceMappingURL=../../css/maps/style.css.map */
