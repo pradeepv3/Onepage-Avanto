@@ -232,6 +232,9 @@ var Owly = (function () {
 			sendContactEmail(event, "#contact-form");
 		});
 
+		//
+		new WOW().init();
+
 	};
 	return {
 		init: init()
