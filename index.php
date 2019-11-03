@@ -80,13 +80,18 @@
 			<section class="feature">
 			<div class="container">
 			<p>Avanto One page responsive portfolio layout which can be utilized to demonstrate your works. I have developed this page using PHP, HTML5 and  SASS. This flexible template uses fresh and clean design.</p>
-			<h2>What you get?</h2>
+			<h2>Features:</h2>
 				<ul>
-					<li>7 Different Home Pages</li>
-					<li>Sass Files</li>
-					<li>Gulp File</li>
-					<li>Font Awesome Icons</li>
-					<li>Google Fonts</li>
+				<li>6 Protfolio pages</li>
+				<li>Fully Responsive HTML5</li>
+				<li>CSS3 Animations</li>
+				<li>SEO optimized</li>
+				<li>Mobile Navigations</li>
+				<li>Fully Responsive to all devices</li>
+				<li>Developer Friendly Coding</li>
+				<li>Sticky Navigation</li>
+				<li>W3 Valid 100%</li>
+				<li>Browser Compatibility</li>
 			</ul>
 			</div>
 				
@@ -96,7 +101,7 @@
 			<div class="container">
 				<div class="">
 					<div class="text-center">
-						&copy; <?php echo date('Y') ?>	Copyright.
+						&copy; <?php echo date('Y') ?>	Copyright | by <a target="_blank" href="http://pradeep-designer.com">Pradeep</a>
 					</div>
 				</div>
 			</div>
