@@ -14,9 +14,10 @@ Avanto One page responsive portfolio layout which can be utilized to demonstrate
 - Sticky Navigation
 - W3 Valid 100%
 - Browser Compatibility
+- SVG progress bar
+- Fancybox
 
-To update the files in your local machine you need PHP server (XAMMP) and to compile SASS file you need NodeJS. One you got local setup just run following command to compile SASS file.
+To update the files in your local machine you need PHP server (XAMMP) and to compile SASS file you need NodeJS. Once you got local setup just run following command to compile SASS file.
 
-```javascript
-local-diretory> npm start
+> npm start
 

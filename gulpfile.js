@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const wait = require('gulp-wait');
 const sourcemaps = require("gulp-sourcemaps");
 const browserSync = require('browser-sync').create();
+const reload = browserSync.reload;
 const autoprefix = require('gulp-autoprefixer');
 const uglify = require("gulp-uglify");
 const cssbeautify = require('gulp-cssbeautify');
@@ -21,8 +22,7 @@ var cssSrcDest = './css/';
 var JsSRC = ['./assets/js/**/*.js'];
 var JsDest = './js/';
 
-
-
+// Sass Compiler
 function style() {
     return gulp.src(SassSRC)
         .pipe(wait(500))
@@ -31,47 +31,65 @@ function style() {
         .pipe(autoprefix())
         .pipe(sourcemaps.write('../../css/maps'))
         .pipe(cssbeautify({
-          indent: '  ',
-          openbrace: 'separate-line',
-          autosemicolon: true
+        indent: '  ',
+        openbrace: 'separate-line',
+        autosemicolon: true
         }))
         .pipe(gulp.dest(SassDest))
         
         .pipe(browserSync.stream());
 }
 
+// CSS Minifier
 function cleancss() {
-  return gulp.src(cssSrc)
+return gulp.src(cssSrc)
     .pipe(wait(700))
-		.pipe(cleanCSS({
-      debug: true, 
-      rebase: false,
-			level: {
-				1: {
-					specialComments: 0
-				}
-			}
+    .pipe(cleanCSS({
+    debug: true, 
+    rebase: false,
+    level: {
+        1: {
+        specialComments: 0
+        }
+    }
     }))
-  		.pipe(rename(function (path) {
-			path.basename += ".min";
-		}))
-		.pipe(gulp.dest(cssSrcDest));
+    .pipe(rename(function (path) {
+    path.basename += ".min";
+    }))
+    .pipe(gulp.dest(cssSrcDest))
+    .pipe(browserSync.stream());
 }
 
 function compresser() {
-	return gulp.src(JsSRC)
-    .pipe(uglify())
-		.pipe(gulp.dest(JsDest))
-		.pipe(rename(function (path) {
-			path.basename += ".min";
-    }))
-		.pipe(gulp.dest(JsDest))
+    return gulp.src(JsSRC)
+        .pipe(uglify())
+        .pipe(gulp.dest(JsDest))
+        .pipe(rename(function (path) {
+            path.basename += ".min";
+        }))
+        .pipe(gulp.dest(JsDest))
+        .pipe(browserSync.stream());
+}
+
+function browserRelaod() {
+    browserSync.init({
+        proxy: "http://localhost/inkowly-onepage/"
+    })
 }
 
 function watch() {
     gulp.watch(SassSRC, style);
-    gulp.watch(cssSrc, cleancss)
+    gulp.watch(cssSrc, cleancss);
     gulp.watch(JsSRC, compresser);
+    //gulp.watch(cssSrc, browserRelaod);
+    //gulp.watch(cssSrc).on('change', browserSync.reload);
 }
 
-gulp.task('default', watch)
+// exports.style = style;
+// exports.cleancss = cleancss;
+// exports.compresser = compresser;
+
+var build = gulp.parallel(style, cleancss, compresser, browserRelaod, watch);
+//var build = series(style, cleancss, parallel(watch));
+
+gulp.task('default', build);

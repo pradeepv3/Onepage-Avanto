@@ -101,7 +101,7 @@
 			<div class="container">
 				<div class="">
 					<div class="text-center">
-						&copy; <?php echo date('Y') ?>	Copyright | by <a target="_blank" href="http://pradeep-designer.com">Pradeep</a>
+						&copy; <?php echo date('Y') ?>	Copyright | By <a target="_blank" href="http://pradeep-designer.com">Pradeep</a>
 					</div>
 				</div>
 			</div>
