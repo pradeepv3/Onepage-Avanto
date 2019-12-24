@@ -1,9 +1,4 @@
 
-<!-- SEO Meta Tags -->
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<meta name="author" content="Avanto" />
-
 <!-- Google Fonts -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans%7cOpen+Sans%7cMerienda" />
 

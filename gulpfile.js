@@ -31,39 +31,39 @@ function style() {
         .pipe(autoprefix())
         .pipe(sourcemaps.write('../../css/maps'))
         .pipe(cssbeautify({
-        indent: '  ',
-        openbrace: 'separate-line',
-        autosemicolon: true
+            indent: '  ',
+            openbrace: 'separate-line',
+            autosemicolon: true
         }))
         .pipe(gulp.dest(SassDest))
-        
+
         .pipe(browserSync.stream());
 }
 
 // CSS Minifier
 function cleancss() {
-return gulp.src(cssSrc)
-    .pipe(wait(700))
-    .pipe(cleanCSS({
-    debug: true, 
-    rebase: false,
-    level: {
-        1: {
-        specialComments: 0
-        }
-    }
-    }))
-    .pipe(rename(function (path) {
-    path.basename += ".min";
-    }))
-    .pipe(gulp.dest(cssSrcDest))
-    .pipe(browserSync.stream());
+    return gulp.src(cssSrc)
+        .pipe(wait(700))
+        .pipe(cleanCSS({
+            debug: true,
+            rebase: false,
+            level: {
+                1: {
+                    specialComments: 0
+                }
+            }
+        }))
+        .pipe(rename(function (path) {
+            path.basename += ".min";
+        }))
+        .pipe(gulp.dest(cssSrcDest))
+        .pipe(browserSync.stream());
 }
 
 function compresser() {
     return gulp.src(JsSRC)
         .pipe(uglify())
-        .pipe(gulp.dest(JsDest))
+        //.pipe(gulp.dest(JsDest))
         .pipe(rename(function (path) {
             path.basename += ".min";
         }))

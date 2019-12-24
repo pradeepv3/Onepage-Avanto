@@ -10,4 +10,4 @@
 	</div>
 </div>
 
-<?php $enableParticles = true?>
+<?php $enableParticles = true; ?>

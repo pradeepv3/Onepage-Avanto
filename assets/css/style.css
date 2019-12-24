@@ -18,7 +18,8 @@ body
 a,
 .btn,
 button,
-input[type="submit"], .fa
+input[type="submit"],
+.fa
 {
   transition: all .2s linear;
 }
@@ -89,6 +90,12 @@ input[type="submit"]
   position: fixed;
   display: block;
   z-index: 9;
+  background: #333;
+  width: 100%;
+  top: 0;
+  border: 0;
+  height: 100%;
+  opacity: .5;
 }
 
 p.txt-lg
@@ -514,10 +521,82 @@ p
   color: #f58e86 !important;
 }
 
+.navbar .navbar-toggler
+{
+  border: 0;
+  outline: 0;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 0 0;
+  z-index: 9;
+  margin-left: auto;
+}
+
+.navbar .navbar-toggler span.hamburger
+{
+  position: absolute;
+  height: 3px;
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+  transition: all .2s linear;
+  left: 0;
+  border-radius: 3px;
+}
+
+.navbar .navbar-toggler span.hamburger:after, .navbar .navbar-toggler span.hamburger:before
+{
+  position: absolute;
+  content: "";
+  height: 3px;
+  z-index: 9999999;
+  top: 10px;
+  display: inline-block;
+  width: 100%;
+  left: 0;
+  background: #fff;
+  transition: all .2s linear;
+  border-radius: 3px;
+}
+
+.navbar .navbar-toggler span.hamburger:before
+{
+  top: -10px;
+}
+
+.menu-open .navbar .navbar-toggler span.hamburger
+{
+  height: 0;
+}
+
+.menu-open .navbar .navbar-toggler span.hamburger:after, .menu-open .navbar .navbar-toggler span.hamburger:before
+{
+  top: 0px;
+  transform: rotate(45deg);
+}
+
+.menu-open .navbar .navbar-toggler span.hamburger:after
+{
+  transform: rotate(-45deg);
+}
+
 .fixed-nav-bg .navbar .navbar-brand
 {
   z-index: 99;
   color: #000;
+}
+
+.fixed-nav-bg .navbar span.hamburger
+{
+  background-color: #333;
+}
+
+.fixed-nav-bg .navbar span.hamburger:after, .fixed-nav-bg .navbar span.hamburger:before
+{
+  background-color: #333;
 }
 
 @media screen and (min-width: 768px)
@@ -1133,11 +1212,6 @@ svg.circle-progress
   margin-bottom: 25px;
 }
 
-#progress_bar .row > div:nth-child(n+5) svg.circle-progress
-{
-  margin-bottom: 0;
-}
-
 .progress-bar__background
 {
   fill: none;
@@ -1276,12 +1350,12 @@ svg.circle-progress
 {
   .sec-countdown .sec-countdown__item
   {
-    margin: 0 0 20px;
+    margin: 0 0 30px;
   }
 
   .sec-countdown .sec-countdown__icon
   {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
 
   .sec-countdown .sec-countdown_count
@@ -1517,11 +1591,6 @@ svg.circle-progress
   .sec-services
   {
     margin: 0px;
-  }
-
-  .sec-services .sec-services__item:first-child
-  {
-    margin-bottom: 40px;
   }
 }
 
