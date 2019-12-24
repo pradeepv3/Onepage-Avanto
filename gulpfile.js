@@ -63,7 +63,6 @@ function cleancss() {
 function compresser() {
     return gulp.src(JsSRC)
         .pipe(uglify())
-        //.pipe(gulp.dest(JsDest))
         .pipe(rename(function (path) {
             path.basename += ".min";
         }))
@@ -81,15 +80,8 @@ function watch() {
     gulp.watch(SassSRC, style);
     gulp.watch(cssSrc, cleancss);
     gulp.watch(JsSRC, compresser);
-    //gulp.watch(cssSrc, browserRelaod);
-    //gulp.watch(cssSrc).on('change', browserSync.reload);
 }
 
-// exports.style = style;
-// exports.cleancss = cleancss;
-// exports.compresser = compresser;
-
 var build = gulp.parallel(style, cleancss, compresser, browserRelaod, watch);
-//var build = series(style, cleancss, parallel(watch));
 
 gulp.task('default', build);
