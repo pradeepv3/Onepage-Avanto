@@ -25,10 +25,8 @@
             <section class="banner">
                 <div class="container">
                     <div class="text-center">
-                    <h1>
-                    Avanto Onepage
-                    </h1>
-                    <h3>Clean and Mordern 6 Porfolio pages.</h3>
+                    <h1>Avanto Onepage</h1>
+                    <h3>Free Clean and Mordern 6 Porfolio pages.</h3>
                     <a href="https://github.com/pradeepv3/Onepage-Avanto.git" class="btn btn-transparent mr-3"> <i class="fa fa-github"></i> Fork Github</a>
                     <a href="https://github.com/pradeepv3/Onepage-Avanto/archive/master.zip" class="btn btn-transparent"> <i class="fa fa-download"></i> Download Now</a>
                     </div>
@@ -80,7 +78,7 @@
             </section>
             <section class="feature">
             <div class="container">
-            <p>Avanto One page responsive portfolio layout which can be utilized to demonstrate your works. I have developed this page using PHP, HTML5 and  SASS. This flexible template uses fresh and clean design.</p>
+            <h5>Avanto One page responsive portfolio layout which can be utilized to demonstrate your works. I have developed this page using PHP, HTML5 and SASS. This flexible template uses fresh and clean design.</h5>
             <h2>Features:</h2>
                 <ul>
                 <li>6 Protfolio pages</li>
@@ -88,9 +86,10 @@
                 <li>CSS3 Animations</li>
                 <li>SEO optimized</li>
                 <li>Mobile Navigations</li>
-                <li>Fully Responsive to all devices</li>
                 <li>Developer Friendly Coding</li>
                 <li>Sticky Navigation</li>
+                <li>SVG Progress Bar</li>
+                <li>Fancybox</li>
                 <li>W3 Valid 100%</li>
                 <li>Browser Compatibility</li>
             </ul>
@@ -102,7 +101,7 @@
             <div class="container">
                 <div class="">
                     <div class="text-center">
-                        &copy; <?php echo date('Y') ?>	Copyright | By <a target="_blank" href="http://pradeep-designer.com">Pradeep</a>
+                        Copyright &copy; <?php echo date('Y') ?> <small class="mr-2 ml-2">|</small> Developed By <a target="_blank" href="http://pradeepui.in">PradeepUI</a>
                     </div>
                 </div>
             </div>
