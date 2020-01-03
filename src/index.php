@@ -10,7 +10,7 @@
     <link href="css/plugins/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="css/plugins/bootstrap-4.1.3.min.css" rel="stylesheet" type="text/css" />
     <link href="css/home.min.css" rel="stylesheet" type="text/css" />
-    
+    <?php include 'modules/common/_google-analytics.php' ?>
 </head>
 
 <body>

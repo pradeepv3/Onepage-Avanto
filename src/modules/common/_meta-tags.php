@@ -6,7 +6,7 @@
 ?>
 <title>Free Single page Portfolio Template - Avanto</title>
 <meta name="description" content="Free Portfolio website template" />
-<meta name="keywords" content="Free single page, free portfolio Template, Free HTML portfolio Template" />
+<meta name="keywords" content="Free single page template, free portfolio Template, Free HTML portfolio Template" />
 <meta name="author" content="Avanto" />
 
 <meta property="og:title" content="Free Single page Portfolio Template">
@@ -14,13 +14,3 @@
 <meta property="og:image" content="">
 <meta property="og:url" content="<?php echo $pageUrl; ?>">
 <meta name="twitter:card" content="summary_large_image">
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155108820-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-155108820-1');
-</script>

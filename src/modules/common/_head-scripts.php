@@ -17,6 +17,8 @@
 <!-- Custom CSS -->
 <link href="css/style.min.css" rel="stylesheet" type="text/css" />
 
+<?php include 'modules/common/_google-analytics.php' ?>
+
 <!-- JQuery Plugin-->
 <script src='js/plugins/jquery.min.js'></script>
 <?php $enableParticles = false;?>
