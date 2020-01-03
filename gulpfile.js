@@ -16,11 +16,11 @@ var SassSRC = './assets/sass/*.scss';
 var SassDest = './assets/css/';
 
 var cssSrc = './assets/css/**/*.css';
-var cssSrcDest = './css/';
+var cssSrcDest = './src/css/';
 
 // Js File Directory and Js Destination Directory
 var JsSRC = ['./assets/js/**/*.js'];
-var JsDest = './js/';
+var JsDest = './src/js/';
 
 // Sass Compiler
 function style() {
@@ -29,7 +29,7 @@ function style() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefix())
-        .pipe(sourcemaps.write('../../css/maps'))
+        .pipe(sourcemaps.write('../../src/css/maps'))
         .pipe(cssbeautify({
             indent: '  ',
             openbrace: 'separate-line',
@@ -72,7 +72,7 @@ function compresser() {
 
 function browserRelaod() {
     browserSync.init({
-        proxy: "http://localhost/inkowly-onepage/"
+        proxy: "http://localhost/avanto/src"
     })
 }
 

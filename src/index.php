@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-    <title>Avanto</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php include 'modules/common/_meta-tags.php'?>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans%7cJosefin+Sans" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/bootstrap-4.1.3.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/plugins/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/plugins/bootstrap-4.1.3.min.css" rel="stylesheet" type="text/css" />
     <link href="css/home.min.css" rel="stylesheet" type="text/css" />
+    
 </head>
 
 <body>
