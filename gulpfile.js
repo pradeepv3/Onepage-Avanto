@@ -12,7 +12,7 @@ const cleanCSS = require('gulp-clean-css');
 const gulpif = require('gulp-if');
 
 // SASS File Directory and CSS Destination Directory
-var SassSRC = './assets/sass/*.scss';
+var SassSRC = './assets/sass/**/*.scss';
 var SassDest = './assets/css/';
 
 var cssSrc = './assets/css/**/*.css';

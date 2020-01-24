@@ -5,21 +5,7 @@ contact: vpradeep.velu@gmail.com
 Version: 1.0.0
 */
 
-@import "_variables";
-@import "_common";
-@import "_button";
-@import "_topology";
-@import "_parallax";
-@import "_header-nav";
-@import "_banners";
-@import "_section";
-@import "_about";
-@import "_education";
-@import "_skils";
-@import "_countdown";
-@import "_work";
-@import "_services";
-@import "_blog";
-@import "_contact";
-@import "_footer";
-@import "_ie-warning-msg";
+@import "./base/base";
+@import "./layout/layout";
+@import "./components/components";
+@import "./modules/moudles";

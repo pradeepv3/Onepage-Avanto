@@ -79,7 +79,10 @@
             </section>
             <section class="feature">
             <div class="container">
-            <h5>Avanto One page responsive portfolio layout which can be utilized to demonstrate your works. I have developed this page using PHP, HTML5 and SASS. This flexible template uses fresh and clean design.</h5>
+            <p>
+            Avanto is a remarkable and free creative one page website template for agencies and freelancers. The layout is also entirely mobile-ready, operating on smartphones, tablets and desktops without a hitch. To top it all up, Avanto is in tune with modern web browsers. I have developed this page using PHP, HTML5 and SASS. This flexible template uses fresh and clean design.
+            </p>
+           
             <h2>Features:</h2>
                 <ul>
                 <li>6 Protfolio pages</li>

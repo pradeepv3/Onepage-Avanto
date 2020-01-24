@@ -1,16 +1,4 @@
-<!DOCTYPE Html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php include 'modules/common/_meta-tags.php'?>
-    <?php include 'modules/common/_head-scripts.php'?>
-</head>
-
-<body class="" data-spy="scroll" data-target=".navbar-nav">
-    <div class="container-wrapper">
 
         <?php include 'modules/common/_header.php';?>
         <div class="content">
@@ -64,8 +52,3 @@
             </section>
         </div>
         <?php include 'modules/common/_footer.php';?>
-    </div>
-    <?php include 'modules/common/_footer-js-scripts.php';?>
-</body>
-
-</html>
