@@ -7,7 +7,7 @@
     "gulp-autoprefixer": "^7.0.0",
     "gulp-if": "^3.0.0",
     "gulp-wait": "0.0.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lodash.merge": "^4.6.2",
     "lodash.template": "^4.5.0"
   },
